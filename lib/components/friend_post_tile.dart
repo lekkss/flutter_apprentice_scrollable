@@ -17,7 +17,7 @@ class FriendPostTile extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         CircleImage(
-          imageProvider: AssetImage(post.id),
+          imageProvider: AssetImage(post.profileImageUrl),
         ),
         const SizedBox(width: 16),
         Expanded(
@@ -26,7 +26,7 @@ class FriendPostTile extends StatelessWidget {
             children: [
               Text(post.comment),
               Text(
-                '&{post.timestamp} mins ago',
+                '${post.timestamp} mins ago',
                 style: const TextStyle(fontWeight: FontWeight.w700),
               ),
             ],

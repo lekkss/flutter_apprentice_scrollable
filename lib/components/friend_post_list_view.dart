@@ -26,7 +26,7 @@ class FriendPostListView extends StatelessWidget {
           const SizedBox(height: 16),
           ListView.separated(
             scrollDirection: Axis.vertical,
-            // primary: false,
+            primary: false,
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: friendPosts.length,
